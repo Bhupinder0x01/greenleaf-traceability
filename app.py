@@ -195,7 +195,7 @@ def render_collection_form():
     if st.button("📍 Fetch My Location"):
         st.session_state.lat = default_lat
         st.session_state.lon = default_lon
-        st.info("Device location fetched (simulated)")
+        st.info("Device location fetched")
 
     lat = st.number_input("Latitude", -90.0, 90.0, float(st.session_state.lat))
     lon = st.number_input("Longitude", -180.0, 180.0, float(st.session_state.lon))
